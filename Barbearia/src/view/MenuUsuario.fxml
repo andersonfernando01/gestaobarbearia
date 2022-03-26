@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuUsuarioController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imagens/AgendaFundo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="289.0" fitWidth="495.0" layoutX="53.0" layoutY="17.0" opacity="0.61" pickOnBounds="true">
+         <image>
+            <Image url="@../imagens/painel-login.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="189.0" layoutY="36.0" text="Menu Usuário" textFill="#f8f6f6">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="162.0" layoutY="162.0" mnemonicParsing="false" onAction="#CadastrarUsuario" text="Cadastrar" textFill="#e8771b" AnchorPane.topAnchor="162.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="348.0" layoutY="162.0" mnemonicParsing="false" onAction="#TrocarUsuario" text="Trocar Usuário" textFill="#e8771b" AnchorPane.topAnchor="162.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

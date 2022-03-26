@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CaixaController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1117.0" layoutX="-14.0" pickOnBounds="true" AnchorPane.leftAnchor="-14.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imagens/Agenda-PainelFundo.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="53.0" layoutY="206.0" prefHeight="200.0" prefWidth="658.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Cliente" />
+          <TableColumn prefWidth="100.0" text="Serviço" />
+            <TableColumn prefWidth="75.0" text="Valor" />
+            <TableColumn prefWidth="81.0" text="Data " />
+            <TableColumn prefWidth="50.0" text="Hora" />
+            <TableColumn prefWidth="251.0" text="Observações" />
+        </columns>
+      </TableView>
+      <TableView layoutX="55.0" layoutY="446.0" prefHeight="200.0" prefWidth="658.0" AnchorPane.bottomAnchor="54.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Cliente" />
+          <TableColumn prefWidth="100.0" text="Serviço" />
+            <TableColumn prefWidth="64.0" text="Valor" />
+            <TableColumn prefWidth="79.0" text="Data Agenda" />
+            <TableColumn prefWidth="92.0" text="Data efectuada" />
+            <TableColumn prefWidth="67.0" text="Valor pago" />
+            <TableColumn prefWidth="55.0" text="troco" />
+            <TableColumn prefWidth="100.0" text="Atendente" />
+        </columns>
+      </TableView>
+      <Label layoutX="55.0" layoutY="169.0" text="Serviços Agendados" textFill="#e45908">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="408.0" text="Serviços Efectuados" textFill="#e45908">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="737.0" layoutY="521.0" prefHeight="125.0" prefWidth="296.0" AnchorPane.leftAnchor="737.0" AnchorPane.rightAnchor="102.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" prefWidth="21.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" prefWidth="21.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" prefWidth="21.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" prefWidth="21.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" text="1" />
+            <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" text="2" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="x" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="7" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="( )" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="3" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <TextArea editable="false" layoutX="737.0" layoutY="446.0" prefHeight="76.0" prefWidth="278.0" />
+      <Label layoutX="723.0" layoutY="293.0" text="Total de Operações diárias" textFill="#e45908">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="727.0" layoutY="330.0" text="Valor entregue" textFill="#e45908">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="729.0" layoutY="369.0" text="Troco" textFill="#e45908">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="904.0" layoutY="289.0" prefHeight="25.0" prefWidth="79.0" />
+      <TextField layoutX="905.0" layoutY="326.0" prefHeight="25.0" prefWidth="79.0" />
+      <TextField editable="false" layoutX="905.0" layoutY="365.0" prefHeight="25.0" prefWidth="79.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="6.0" text="Caixa" textFill="#e45908" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button layoutX="722.0" layoutY="206.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="141.0" text="Imprimir Factura" textFill="#e45908">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="923.0" layoutY="204.0" mnemonicParsing="false" onAction="#fecharJanela" prefHeight="47.0" prefWidth="58.0" text="Sair" textFill="#e45908">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

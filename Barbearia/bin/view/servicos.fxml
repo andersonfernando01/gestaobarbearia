@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServicosController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="554.0" layoutX="19.0" layoutY="14.0" nodeOrientation="INHERIT" pickOnBounds="true" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../imagens/Agenda-PainelFundo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="361.0" layoutY="37.0" text="Registar Serviços" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="109.0" text="Cod:" textFill="#e16614">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="136.0" text="Serviços:" textFill="#e16614">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCodigo" disable="true" layoutX="82.0" layoutY="107.0" prefHeight="25.0" prefWidth="52.0" />
+      <TextField fx:id="tfNome" disable="true" layoutX="108.0" layoutY="134.0" />
+      <TableView fx:id="Tabela" layoutX="46.0" layoutY="273.0" prefHeight="200.0" prefWidth="340.0" AnchorPane.leftAnchor="46.0">
+        <columns>
+          <TableColumn fx:id="tbId" prefWidth="45.0" text="Código" />
+          <TableColumn fx:id="tbNome" prefWidth="200.0" text="Serviços" />
+            <TableColumn fx:id="tbpreco" prefWidth="100.0" text="Preço" />
+        </columns>
+      </TableView>
+      <Label layoutX="47.0" layoutY="172.0" text="Preço:" textFill="#e16614">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPreco" disable="true" layoutX="105.0" layoutY="170.0" />
+      <Button fx:id="btnEditar" disable="true" layoutX="115.0" layoutY="235.0" mnemonicParsing="false" onAction="#EditarRegistro" text="Editar" textFill="#e16614">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNovo" layoutX="46.0" layoutY="235.0" mnemonicParsing="false" onAction="#NovoRegistro" text="Novo " textFill="#e16614">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSalvar" disable="true" layoutX="178.0" layoutY="235.0" mnemonicParsing="false" onAction="#GuardarRegistro" text="Cadastar" textFill="#e16614">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnApagar" disable="true" layoutX="271.0" layoutY="235.0" mnemonicParsing="false" onAction="#ApagarRegistro" text="Apagar" textFill="#e16614">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" disable="true" layoutX="357.0" layoutY="235.0" mnemonicParsing="false" onAction="#CancelarRegistro" text="Cancelar " textFill="#2f0cf5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="482.0" layoutY="235.0" mnemonicParsing="false" onAction="#fecharJanela" text="Sair" textFill="#fc0303">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
